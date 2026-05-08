@@ -377,3 +377,6 @@ Folder Structure:
     └──index.js
 
 
+GDrive: https://drive.google.com/drive/folders/1NDDnFdBZjtDnqAZE4P7d9aFk3MkGWnWF?usp=sharing
+
+GitHub: https://github.com/TECHNO-SKILL-Ranaghat/NEW_WEBSITE_CREATION
