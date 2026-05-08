@@ -1,0 +1,379 @@
+
+START
+    ↓
+User visits website
+    ↓
+Is user logged in?
+    ├── NO → Visitor Flow
+    └── YES → Check User Role
+                    ↓
+        Is role Student / Franchise / Admin?
+            ├── Student → Student Portal Flow
+            ├── Franchise → Franchise Portal Flow
+            └── Admin → Admin Portal Flow
+
+
+
+
+Visitor Flow
+    ↓
+Select action:
+    ├── Show popup
+    ├── View Courses → Display Courses content
+    ├── View Study Centers → Display Locations
+    ├── Fill Student Admission Form → Submit → Send to Admin
+    ├── Apply for Franchise → Submit → Send to Admin
+    ├── View Gallery → Display Images/videos
+    └── can see licences or affiliation.
+    ↓
+END / Back to Home
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+Student Portal
+
+Login as Student (admin will generate login credentials )
+    ↓
+Authentication successful?
+    ├── NO → Show Error → Retry
+    └── YES → Dashboard
+                ↓
+        Select action:
+        	├── View dashboard (course details, course duration, remaining course duration, upcoming exam, past exam, exam score, 
+	        │    certificate issued, total fees remaing, fees paid, total late fee paid, fees payment date reminder and so on...)
+          	├── View Profile
+          	├── View Courses
+          	│       └── Want new course?
+          	│	            ├── YES → contact franchise or admin
+          	│              	└── NO
+          	├── Attend Exam → Start Exam → Submit → Result Out → Save/Print Result
+          	└── View Notifications (fees payment reminder, fee pending + late fee added, result, certification and so on...)
+    ↓
+Logout / END
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+Franchise Portal
+
+Login as Franchise
+    ↓
+Authentication successful?
+    ├── NO → Show Error
+    └── YES → Dashboard
+                ↓
+        Select action:
+            ├── View Profile
+            ├── Request for course(s)
+            ├── Wallet (Main Wallet + SRB Wallet)
+            │       └── Request specific amount deposit→ Send to Admin
+            ├── Add Student Admission → Submit → Wait for admin Approval
+            │
+            │       ↓
+            │   Admin Approval?
+            │       ├── NO → Show Rejected / Pending
+            │       └── YES → Proceed
+            │                     ↓
+            │          Deduct Wallet Balance (Main Wallet)
+            │                     ↓
+            │          Generate Registration Number
+            │                     ↓
+            │          Student Registered
+            │
+            ├── View Students
+            │       └── Approved?
+            │              ├── YES → Show Students
+            │              └── NO → Show Pending
+            ├── Send Exam Request
+            │       └── Admin Approval
+            │                  └── view exam credentials sent by admin
+            └── View Notifications
+        ↓
+Logout / END
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+Admin Portal
+
+Login as Admin
+    ↓
+Authentication successful?
+    ├── NO  → Show Error
+    └── YES → Dashboard
+                ↓
+        Select action:
+        	├── Dashboard home page (count of total student, student with cleared fees, student with pending fees, total fees collected, total late fine collected, total course type, total course, total franchise and so on...)
+        	├── View Profile
+        	├── CRUD on POPUP
+        	├── CRUD on GALLERY
+        	├── View Profile
+        	├── Add/View/Update/Delete Course
+        	├── View Franchise Applications
+        	│       └── Approve or Reject?
+        	│              ├── Approve → Generate Franchise Code
+        	│              └── Reject → Notify Franchise User
+        	├── Wallet deposit Requests
+        	│       └── Approve or Reject
+        	├── CRUD on Student
+        	├── Student Admissions
+        	│       └── Approve → Generate Registration Number + generate student login credentials+deduct balance from franchise wallet
+        	├── Generate Registration Number (Format: FRANCHISE_CODE / COURSE_CODE / YEAR / RANDOM)
+        	│     
+        	├── Manage Exams
+        	│       ├── CRUD Exam
+        	│       ├── Approve Request
+        	│       └── Generate exam credentials and sent to franchise
+        	│       └── Generate Reports (print)
+        	├──  view Notifications (late fee collected, fee collected, admission, franchise request, course admision and so on...)
+        	├──  send Notifications to student/ franchise
+        	└── Licence CRUD
+	  ↓
+Logout / END
+
+
+
+Student/ Franchise can print application form after fillup
+
+SRB balance is franchise commision on bootcamp per student
+
+
+**student admission date will pick from input box
+
+**public portal must have google map location
+
+
+
+
+
+
+
+student Registration or admission form fields: (rearrenge if needed)
+
+State (dropdown)
+District (dropdown)
+Study Centre (dropdown)
+Study Centre Address (textbox - value automatically show after select study center)
+
+Course Category (dropdown)
+Duration (dropdown)
+Course Name (dropdown)
+
+Name
+Father's Name
+Mother's Name
+Date of Birth (dd/mm/yyyy)
+Gender (dropdown)
+Contact Number
+Religion (dropdown)
+WhatsApp Number
+Category (dropdown)
+Marital Status (dropdown)
+Address
+Last Educational Qualification (dropdown)
+Enquiry Source (dropdown)
+Pin Code
+Identity Proof (dropdown)
+Admission date (dd/mm/yyyy)
+
+Passport Size Color Photo (file)
+Identity Proof Color Photo (file)
+
+Declaration (radio)
+
+
+_____________________________________________________________________________________________________________
+
+
+Student Verification:
+Registration No
+DOB (dd/mm/yyyy)
+
+
+_____________________________________________________________________________________________________________
+
+
+STUDENT LOGIN:
+Registration No
+password
+
+
+_____________________________________________________________________________________________________________
+
+
+
+Franchise Application or Request: (rearrenge if needed)
+
+APPLICATION FORM FOR AFFILATION
+State (dropdown)
+District (dropdown)
+City
+
+
+Institute Information
+
+Name of the Institute
+Year of Establishment
+Status of The Institution
+Postal Address of the Institute
+P.O.
+P.S.
+Pin
+
+Institute Contact No
+
+Primary Mobile Number
+Alternative Mobile Number
+Email ID 
+
+Information About Centre Head
+
+Name of the Head
+Position Hold Centre
+Address of the Centre Head
+P.O.
+P.S.
+Pin
+Mobile
+Email of the Centre Head
+Date of Birth (dd/mm/yyyy)
+Gender (dropdown)
+Nationality
+Religion
+
+Available Infrastructure Facility of the Centre
+DOCUMENTS
+
+Color Passport Size Photo Of The Centre Head (file)
+Voter Card of The Institute Head (Both side in one page) (file)
+Pan Card Of The Institute Head (file)
+Trade License Of The Institute (file)
+Color Photograph Of Front Side Of The Institute (file)
+Color Photo Of Practical Room (file)
+Color Photo Of Theory Room (file)
+
+DECLARATION (radio)
+
+
+_____________________________________________________________________________________________________________
+
+
+Franchise Login:
+
+Center ID:
+password
+
+
+_____________________________________________________________________________________________________________
+
+
+
+All date format: dd/mm/yyy
+
+course view format (visitor, franchise, student, admin):
+
+COURSE_NAME:
+sem1:
+    *....
+    *....
+    *....
+sem2:
+    *....
+    *....
+    *....
+
+
+
+================================================
+
+Tech Stack & Requirements:
+Frontend: React.js / Next.js
+UI: Tailwind CSS + ShadCN UI
+Backend: Node.js + Express.js
+Database: MongoDB with Mongoose
+Architecture: Microservices (modular and scalable design)
+API: REST / GraphQL (well-documented using Swagger/Postman)
+state management: React Redux, Redux Toolkit
+
+Authentication & Security:
+JWT + Refresh Tokens
+Google Authentication
+Role-Based Access Control (RBAC)
+Input validation (Joi/Zod)
+Rate limiting & API protection
+Secure password hashing (bcrypt)
+
+Performance & Infrastructure:
+Redis (caching + session handling)
+Dockerized services
+CI/CD pipeline (GitHub Actions)
+Nginx reverse proxy
+
+Payments:
+Razorpay integration
+Webhook handling for payment verification
+Invoice generation system
+
+Storage & Media:
+Cloudinary / AWS S3
+Structured file management system
+
+Notifications:
+Nodemailer (email notifications)
+In-app notification system
+
+Documents:
+	PDF generation for:
+      Result,
+	    Certificates,
+	    Fee receipts,
+	    Reports
+
+Testing:
+Jest + Supertest
+React Testing Library
+Minimum 80%+ coverage
+
+Logging & Monitoring:
+Winston / Pino logging
+Error tracking (Sentry)
+Admin activity logs
+
+UX & UI:
+Fully responsive (mobile-first)
+Clean dashboard UI
+Loading states & skeletons
+
+Typography:
+fonts: Google Fonts (Inter, Roboto, Poppins, others...)
+icons: Lucide React
+
+==========================================
+Folder Structure:
+
+──client
+|   |──public
+|   |──src
+|   |──components
+|   |──pages
+|   |──hooks (custom hooks)
+|   |──redux
+|   └──utils
+└──server
+    |──controllers
+    |──routes
+    |──services
+    |──models
+    |──validations (zod/joi)
+    |──config (ex:db, cloudinary)
+    |──middleware (globalError, auth, role)
+    |──server.js/app.js
+    └──index.js
+
+

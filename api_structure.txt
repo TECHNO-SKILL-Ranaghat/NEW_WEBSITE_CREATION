@@ -1,0 +1,167 @@
+Use:
+
+/api/v1 /
+
+
+=====================================
+
+
+AUTH APIs
+
+POST /api/v1/auth/register
+POST /api/v1/auth/login
+POST /api/v1/auth/refresh-token
+POST /api/v1/auth/logout
+GET  /api/v1/auth/google
+
+=====================================
+
+
+USER APIs
+
+GET  /api/v1/users/me
+PATCH /api/v1/users/me
+GET  /api/v1/users/:id
+
+=====================================
+
+
+STUDENT APIs
+
+GET    /api/v1/students
+POST   /api/v1/students
+GET    /api/v1/students/:id
+PATCH  /api/v1/students/:id
+DELETE /api/v1/students/:id
+
+=====================================
+
+
+FRANCHISE APIs
+
+POST   /api/v1/franchises/apply
+GET    /api/v1/franchises
+GET    /api/v1/franchises/:id
+PATCH  /api/v1/franchises/:id
+
+=====================================
+
+
+WALLET APIs
+
+GET    /api/v1/wallets/:franchiseId
+POST   /api/v1/wallets/transactions
+GET    /api/v1/wallets/transactions
+
+
+=====================================
+
+
+COURSE APIs
+
+GET    /api/v1/courses
+POST   /api/v1/courses
+PATCH  /api/v1/courses/:id
+DELETE /api/v1/courses/:id
+
+
+=====================================
+
+
+ADMISSION APIs
+
+POST   /api/v1/admissions
+GET    /api/v1/admissions
+PATCH  /api/v1/admissions/:id   (approve/reject via status)
+
+=====================================
+
+
+EXAM APIs
+
+POST   /api/v1/exams
+GET    /api/v1/exams
+
+
+=====================================
+
+EXAM ATTEMPTS APIs
+
+POST   /api/v1/exam-attempts
+PATCH  /api/v1/exam-attempts/:id
+GET    /api/v1/exam-attempts/:studentId
+
+
+=====================================
+
+
+RESULT APIs
+
+GET /api/v1/results/:studentId
+
+
+=====================================
+
+
+NOTIFICATION APIs
+
+GET    /api/v1/notifications
+PATCH  /api/v1/notifications/:id
+POST   /api/v1/notifications
+
+
+=====================================
+
+
+GALLERY APIs
+
+GET    /api/v1/notifications
+PATCH  /api/v1/notifications/:id
+POST   /api/v1/notifications
+
+
+=====================================
+
+
+POPUP APIs
+
+GET    /api/v1/popups
+POST   /api/v1/popups
+PATCH  /api/v1/popups/:id
+DELETE /api/v1/popups/:id
+
+
+=====================================
+
+
+Banner APIs
+
+GET    /api/v1/banners
+POST   /api/v1/banners
+PATCH  /api/v1/banners/:id
+DELETE /api/v1/banners/:id
+
+
+=====================================
+
+
+LICENCE APIs
+
+GET    /api/v1/licenses
+POST   /api/v1/licenses
+DELETE /api/v1/licenses/:id
+
+
+=====================================
+
+ANALYTICS (ADMIN) APIs
+
+GET /api/v1/analytics/dashboard
+GET /api/v1/analytics/revenue
+GET /api/v1/analytics/students
+....
+....
+....
+
+
+=====================================
