@@ -18,7 +18,8 @@ no money transfers via website. Wallet and transaction records are for calculati
 3. Under the "Admin portal" we found the following entities: "CRUD on POPUP." What do you suggest by this phrase?
 -> admin can add/delete popup in images format. that will visible to visitor. admin can add max 3 popup images from admin portal. after add popup images admin can view image
 while visitor open website then that popup will show there
-not just popup. after navbar one Carousel slider is needed,and Carousel slider image also control by admin. admin can add/delete slider image. admin can add n no of slider images from admin portal
+not just popup. after navbar one Carousel slider is needed,and Carousel slider image also control by admin. 
+admin can add/delete slider image. admin can add upto 6 images in slider images from admin portal
 
 
 4. Regarding the "CRUD Exam," we need thorough details on the following:
