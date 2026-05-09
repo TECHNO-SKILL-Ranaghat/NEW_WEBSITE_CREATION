@@ -50,7 +50,7 @@ not just popup. after navbar one Carousel slider is needed,and Carousel slider i
 
 
 5. If a student "initiates payment for new courses," will it be credited to the "site admin's" account or the "franchise owner's" account? What will be the commission of a "franchise"?
--> ignore student payment part. student can't make any payment via web site. admin will add balance manually to franchise SRB Wallet.
+-> ignore student payment part. student can't make any payment via web site.
 
 
 6. Please elaborate on the following "License CRUD." How many licenses can the admin create?
