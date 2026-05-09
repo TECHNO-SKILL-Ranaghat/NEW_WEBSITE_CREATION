@@ -42,7 +42,7 @@ not just popup. after navbar one Carousel slider is needed,and Carousel slider i
 
     franchise set time limit for exam. 
     instant score(total question attempted, correct, score pass/fail).
-    admin send exam credentials to franchise. One credentials for all students. after that admin will generate exam credentials and sent to franchise.
+    admin send exam credentials to franchise. One credentials for all students.
     after that franchise can share those credentials with students.
     students can attend exam via student portal using those credentials. After start exam and exam submit credentials will expire for students.
 
