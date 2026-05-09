@@ -1,5 +1,5 @@
 1. Under the "Franchise portal" section, we found the following: "Wallet (Main Wallet + SRB Wallet)" How will the wallet amount be managed? Will it contain some points?
--> during certification or admission franchise can choose from which wallet money will be deduct by admin Main or SRB.
+-> during admission franchise can choose from which wallet money will be deduct by admin Main or SRB.
     only admin can add money manually to Main + SRB Wallet. no automacally add to SRB Wallet.
 
 franchise portal must have a option on sidebar "Payment Request".
@@ -83,7 +83,7 @@ student must able to view their marks
 
 
 admin portal need email verification for login.
-
+one messaging system from admin to franchise and franchise to admin. it will show in dashboard when login.
 
 GDrive: https://drive.google.com/drive/folders/1NDDnFdBZjtDnqAZE4P7d9aFk3MkGWnWF?usp=sharing
 

@@ -131,7 +131,7 @@ Authentication successful?
         	│       ├── Approve Request
         	│       └── Generate exam credentials and sent to franchise
         	│       └── Generate Reports (print)
-        	├──  view Notifications (late fee collected, fee collected, admission, franchise request, course admision and so on...)
+        	├──  view Notifications (certificate request, new franchise request, franchise payment request )
         	├──  send Notifications to student/ franchise
         	└── Licence CRUD
 	  ↓
