@@ -1,18 +1,21 @@
 1. Under the "Franchise portal" section, we found the following: "Wallet (Main Wallet + SRB Wallet)" How will the wallet amount be managed? Will it contain some points?
--> during admission franchise can choose from which wallet money will be deduct by admin Main or SRB.
+-> franchise can choose from which wallet money will be deduct by admin Main or SRB during generate registration number.
     only admin can add money manually to Main + SRB Wallet. no automacally add to SRB Wallet.
 
 franchise portal must have a option on sidebar "Payment Request".
 logic is:
 franchise deposit money to admins bank. via website franchise will send bankname, transaction type (online,neft...), amount, payment date, remarks and receipts of payment(pdf/docx/image) to admin.
 it will show as Pending in transaction table. admin will check and make approve when approve it automatically add money to franchise main wallet.
- 
-Will there be any online money transfers occurring through the website?
-no money transfers via website. Wallet and transaction records are for calculation and record keeping
+
+
 
 
 2. We can see that the admin can approve/reject the wallet deposit/withdrawal request. If the Admin approves any deposit/withdrawal request, then what will happen next?
 -> transaction will show in transaction table as pending/approved. no withdrawal only deposit(ignore withdrawal)
+
+
+Will there be any online money transfers occurring through the website?
+no money transfers via website. Wallet and transaction records are for calculation and record keeping
 
 
 3. Under the "Admin portal" we found the following entities: "CRUD on POPUP." What do you suggest by this phrase?
@@ -24,31 +27,31 @@ admin can add/delete slider image. admin can add upto 6 images in slider images 
 
 4. Regarding the "CRUD Exam," we need thorough details on the following:
     a. Can you define the format of the exam? Will it contain the MCQ only?
-    ->  only MCQ. 4 options per question.    
+    ->  only MCQ. 4 options per question. 2 marks per question, no negative marking.
 
     b. How will the "online exam" be conducted? Please share a detailed overview.
     -> from student portal student can attend exam, before that franchise must request admin for exam and admin will generate exam date and exam credentials also.
 
     c. How will the assessment occur?
-    -> online submission.
+    -> online submission. no screen share, no screen recording, no camera & microphone enabled.
 
     d. Can you share the exam sample for reference?
     -> admin will send 100 question with answer to franchise portal. and franchise must add/select any 60 question with answer for exam.
-    student will see 50 question. and other 10 question will able to skip. student must answer 50 question.
+    student will see 50 question(randomly). and other 10 question will able to skip. student must answer 50 question.
     means: if student want to skip any question then that 10 question will generate randomly.
     student must know only 10 skip available.
     if student want to see next question must answer current question.
     button: skip, next and submit(exam).
-    student can't submit with out 50 question answer. only if timeout then only automatically submit.
+    student can't submit with out answer 50 questions. if timeout then only automatically submit.
 
     franchise set time limit for exam. 
-    instant score(total question attempted, correct, score pass/fail).
+    instant score(total question attempted, count of corrected questions, score pass/fail).
     admin send exam credentials to franchise. One credentials for all students.
     after that franchise can share those credentials with students.
-    students can attend exam via student portal using those credentials. After start exam and exam submit credentials will expire for students.
+    students can attend exam via student portal using those credentials. After start exam and/or exam submit credentials will expire for students.
 
     if issue like electricity failure or internet issue or specific computer issue like turn off, then  franschise can request admin for re credentials.
-    admin will generate new credentials and send to franchise.
+    then admin will generate new credentials for specific student and send to franchise.
 
 
 5. If a student "initiates payment for new courses," will it be credited to the "site admin's" account or the "franchise owner's" account? What will be the commission of a "franchise"?
@@ -56,7 +59,7 @@ admin can add/delete slider image. admin can add upto 6 images in slider images 
 
 
 6. Please elaborate on the following "License CRUD." How many licenses can the admin create?
--> admin will create more than 3 licence. License CRUD means admin can add/delete licence as image via admin portal and visitor, student, franchise can see like auto scroll in before footer or better position ...
+-> admin will create more than 8 licence. License CRUD means admin can add/delete licence as image via admin portal and visitor, student, franchise can see like auto scroll in before footer or better position ...
 after add licence images admin can view that image
 
 
@@ -66,7 +69,7 @@ franchise withdrawal request
 student payment part.
 
 no payment via website.
-it is only for record keeping and calculation.
+Wallet system only for record keeping and calculation.
 admin will add balance manually to franchise Main + SRB Wallet.
 
 
@@ -83,7 +86,7 @@ student must able to view their marks
 
 
 admin portal need email verification for login.
-one messaging system from admin to franchise and franchise to admin. it will show in dashboard when login.
+one messaging system from admin to franchise and franchise to admin. it will show in notification.
 
 GDrive: https://drive.google.com/drive/folders/1NDDnFdBZjtDnqAZE4P7d9aFk3MkGWnWF?usp=sharing
 
