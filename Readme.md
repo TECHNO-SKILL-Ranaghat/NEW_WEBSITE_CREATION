@@ -207,27 +207,6 @@ Key collections and models expected:
 - Approve/reject franchise and admission requests
 - Wallet approvals, exam management, analytics, notifications
 
-## Setup Instructions
-
-1. Push or Clone the repository.
-   -  https://github.com/TECHNO-SKILL-Ranaghat/AIYCEC_OFFICIAL
-      
-2. Install dependencies separately for client and server:
-   - cd client && npm install
-   - cd server && npm install
-3. Configure environment variables for backend:
-   - MONGODB_URI
-   - JWT_SECRET
-   - JWT_REFRESH_SECRET
-   - RAZORPAY_KEY_ID
-   - RAZORPAY_KEY_SECRET
-   - CLOUDINARY_URL or AWS credentials
-   - REDIS_URL
-   - EMAIL_HOST, EMAIL_USER, EMAIL_PASS
-4. Run backend server:
-   - cd server && npm run dev
-5. Run frontend app:
-   - cd client && npm run dev
 
 ## Testing
 - Use Jest, Supertest, and React Testing Library Minimum 85%+ coverage 

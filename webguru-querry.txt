@@ -37,8 +37,8 @@ admin can add/delete slider image. admin can add upto 6 images in slider images 
 
     d. Can you share the exam sample for reference?
     -> admin will send 100 question with answer to franchise portal. and franchise must add/select any 60 question with answer for exam.
-    student will see 50 question(randomly). and other 10 question will able to skip. student must answer 50 question.
-    means: if student want to skip any question then that 10 question will generate randomly.
+    student will see 50 question(randomly for every student). and other 10 question will able to skip. student must answer 50 question.
+    means: if student want to skip any question then extra 10 question will generate randomly.
     student must know only 10 skip available.
     if student want to see next question must answer current question.
     button: skip, next and submit(exam).
